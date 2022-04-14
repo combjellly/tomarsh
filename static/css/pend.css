@@ -1,0 +1,97 @@
+@charset "utf-8"; 
+
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    
+p {
+	color:#f87979;
+	font-family: "courier", monospace;
+	font-weight:100;
+	font-style: italic;
+	font-size: 30px;
+	
+}
+
+body {
+	background-image:url('/static/img/Scan2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding:0px;
+	margin:0px;
+	background-position:center top;
+}
+
+.main {
+	background-image: -webkit-linear-gradient(#ffffff 0%, #ffd5d5 100%);
+	font-style: italic;
+	font-size: 30px;
+	font-family: "courier", monospace;
+	width:500px;
+	height: 400px;
+	position: fixed;
+	right:0 ;
+	padding: 20px 20px 20px;
+
+
+}
+.edit {
+	background-image: -webkit-linear-gradient(#ffd5d5 0%, #ffffff 100%);
+	border: 5px 0px inset black;
+	padding: 20px 20px 20px;
+	text-align: right;
+}
+
+.about {
+	background-image: -webkit-linear-gradient(#ffffff 0%, rgba(45, 113, 232, ) 100%);
+	width: 300px;
+	height: 100px;
+	font-size: small;
+	position: fixed;
+	right: 0;
+	padding-right: 10px;
+	text-align: right;
+
+}
+
+.scroll {
+	background-image: -webkit-linear-gradient(#ffffff 0%, #ccffdc 100%);
+	width: 80px;
+	height:300px;
+	font-size: small;
+	text-align: left;
+}
+
+
+
+a:link {
+  color: #ffd5d5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffd5d5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #800000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+

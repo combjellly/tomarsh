@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="oQQ0CRp4q4Iv4KF3hpc_1mTnfe_ISMk74J6qdDGKWLk" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+{%block css%}{%endblock%}
+
+
+<head>
+	<title> mardide </title>
+
+</head>
+
+<body>
+	<p class="edit" >
+			N Brown-Hernandez
+			{% with messages = get_flashed_messages(with_categories=true)%}
+
+			{% if messages %}
+				{% for category, message in messages %}
+				<div class="alert alert-{{ category }}">
+					{{ message }}
+				</div> 
+				{% endfor %}
+
+			{% endif %}
+			{% endwith %}
+	</p>
+	
+		{% block about %}{%endblock about%}
+
+
+	<p class="scroll"> 
+		<a href="contact">Contact</a>
+		<a href="portfolio">Portfolio</a>
+		<a href="music">Music</a>
+		<br><a href="https://github.com/combjellly">Code</a></br>
+		<a href="moderna">Sticker</a>
+		<a href="lathe">Lathe</a>
+		 <br>
+		<a href="ygo">YGO </a>
+
+
+		{% block portmenu %} {% endblock %}
+		{% block portfolio%}{%endblock portfolio%}
+
+	</p>
+</body>
+	
+</html>

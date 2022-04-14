@@ -1,0 +1,25 @@
+@charset "utf-8"; 
+
+@font-face {
+  font-family: 'rex';
+  src:  url('/static/fonts/rex.woff') format('woff');
+  src:  url('/static/fonts/rex.ttf')  format('truetype');
+}
+
+h1{
+  font-family: rex;
+  font-size: 50px;
+  color: #48686b;
+
+}
+
+
+
+a:link {
+
+	text-decoration: none; 
+	font-size: 20px;
+  color: #0a6e47;
+
+}
+
