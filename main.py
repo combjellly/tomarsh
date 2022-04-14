@@ -11,7 +11,7 @@ app = Flask(__name__)
 def before_request():
     if not request.is_secure:
         url = request.url.replace('http://', 'https://', 1)
-        code = ``
+        code = 301
         return redirect(url, code=code)
 
 app.config["SECRET_KEY"] = '1d7a5cacc3bb3e2d94ff46191fed82fe '
